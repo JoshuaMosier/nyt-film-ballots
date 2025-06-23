@@ -1,0 +1,185 @@
+{
+  "total_people": 119,
+  "total_movie_selections": 1181,
+  "unique_movies": 482,
+  "average_movies_per_person": 9.92,
+  "most_popular_movies": [
+    [
+      "Mulholland Drive",
+      27
+    ],
+    [
+      "Parasite",
+      26
+    ],
+    [
+      "There Will Be Blood",
+      21
+    ],
+    [
+      "Moonlight",
+      20
+    ],
+    [
+      "No Country for Old Men",
+      20
+    ],
+    [
+      "Get Out",
+      18
+    ],
+    [
+      "In the Mood for Love",
+      17
+    ],
+    [
+      "Spirited Away",
+      16
+    ],
+    [
+      "Eternal Sunshine of the Spotless Mind",
+      14
+    ],
+    [
+      "The Social Network",
+      14
+    ]
+  ],
+  "most_popular_years": [
+    [
+      "2001",
+      87
+    ],
+    [
+      "2007",
+      70
+    ],
+    [
+      "2002",
+      62
+    ],
+    [
+      "2014",
+      61
+    ],
+    [
+      "2013",
+      57
+    ],
+    [
+      "2019",
+      57
+    ],
+    [
+      "2011",
+      54
+    ],
+    [
+      "2016",
+      53
+    ],
+    [
+      "2006",
+      53
+    ],
+    [
+      "2008",
+      49
+    ]
+  ],
+  "people_with_most_movies": [
+    [
+      "Naomi Ackie",
+      10
+    ],
+    [
+      "Uzo Aduba",
+      10
+    ],
+    [
+      "Casey Affleck",
+      10
+    ],
+    [
+      "Pedro Almodóvar",
+      10
+    ],
+    [
+      "Pamela Anderson",
+      10
+    ],
+    [
+      "Sean Baker",
+      10
+    ],
+    [
+      "Elizabeth Banks",
+      10
+    ],
+    [
+      "Michael Barker",
+      10
+    ],
+    [
+      "Judy Becker",
+      10
+    ],
+    [
+      "Kate Berlant",
+      10
+    ]
+  ],
+  "category_breakdown": [
+    [
+      "actor",
+      50
+    ],
+    [
+      "director",
+      39
+    ],
+    [
+      "other_creators",
+      11
+    ],
+    [
+      "comedian",
+      8
+    ],
+    [
+      "author",
+      8
+    ],
+    [
+      "exec",
+      7
+    ],
+    [
+      "creator",
+      1
+    ],
+    [
+      "writer",
+      1
+    ]
+  ],
+  "survey_info": {
+    "headline": "The Best Movies of the 21st Century: How Actors, Directors and Other Film Lovers Voted",
+    "custom_headline": "How Actors, Directors and Other Film Lovers Voted",
+    "kicker": "<a href=\"https://www.nytimes.com/interactive/2025/movies/best-movies-21st-century.html\">THE 100 BEST MOVIES OF THE 21st CENTURY</a>",
+    "first_published": "June 22, 2025",
+    "last_modified": "June 23, 2025",
+    "bylines": [
+      {
+        "creatorSnapshots": [
+          {
+            "bioUrl": "https://www.nytimes.com/by/the-new-york-times",
+            "displayName": "The New York Times",
+            "slug": "the-new-york-times"
+          }
+        ],
+        "prefix": "By"
+      }
+    ]
+  }
+}
