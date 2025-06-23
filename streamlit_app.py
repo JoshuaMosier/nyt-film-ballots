@@ -56,6 +56,86 @@ page = st.sidebar.selectbox(
     ["📊 Overview", "🎯 Top 100", "👥 People & Categories", "📈 Trends & Analysis", "🔍 Individual Ballots", "📊 Interactive Explorer"]
 )
 
+# Data Downloads Section
+st.sidebar.divider()
+st.sidebar.subheader("📥 Download Data Files")
+st.sidebar.markdown("*Access the raw data files used in this analysis*")
+
+# Helper function to read file for download
+@st.cache_data
+def load_file_for_download(filename):
+    try:
+        if filename.endswith('.json'):
+            with open(filename, 'r', encoding='utf-8') as f:
+                return f.read()
+        elif filename.endswith('.csv'):
+            with open(filename, 'r', encoding='utf-8') as f:
+                return f.read()
+        else:
+            with open(filename, 'rb') as f:
+                return f.read()
+    except FileNotFoundError:
+        return None
+
+# Download buttons
+col1, col2 = st.sidebar.columns(2)
+
+with col1:
+    # JSON files
+    json_data = load_file_for_download('nyt_film_data.json')
+    if json_data:
+        st.download_button(
+            label="📄 Main Data (JSON)",
+            data=json_data,
+            file_name="nyt_film_data.json",
+            mime="application/json",
+            help="Complete structured data (431KB)"
+        )
+    
+    people_csv = load_file_for_download('nyt_film_data_people.csv')
+    if people_csv:
+        st.download_button(
+            label="👥 People Data (CSV)",
+            data=people_csv,
+            file_name="nyt_film_data_people.csv",
+            mime="text/csv",
+            help="People information (119 rows)"
+        )
+    
+    metadata_csv = load_file_for_download('nyt_film_data_metadata.csv')
+    if metadata_csv:
+        st.download_button(
+            label="📰 Metadata (CSV)",
+            data=metadata_csv,
+            file_name="nyt_film_data_metadata.csv",
+            mime="text/csv",
+            help="Survey metadata (8 rows)"
+        )
+
+with col2:
+    movies_csv = load_file_for_download('nyt_film_data_movies.csv')
+    if movies_csv:
+        st.download_button(
+            label="🎬 Movies Data (CSV)",
+            data=movies_csv,
+            file_name="nyt_film_data_movies.csv",
+            mime="text/csv",
+            help="All movie selections (1,183 rows)"
+        )
+    
+    stats_json = load_file_for_download('nyt_film_data_stats.json')
+    if stats_json:
+        st.download_button(
+            label="📊 Stats Data (JSON)",
+            data=stats_json,
+            file_name="nyt_film_data_stats.json",
+            mime="application/json",
+            help="Detailed analytics and statistics"
+        )
+
+st.sidebar.markdown("---")
+st.sidebar.markdown("*💡 Tip: Use these files for custom analysis in Excel, Python, R, or other tools*")
+
 # Main title
 st.title("🎬 NYT Film Ballots: Best Movies of the 21st Century")
 st.markdown("*Analysis of 119 film industry professionals' movie preferences*")
